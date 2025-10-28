@@ -1,6 +1,6 @@
 # Informe de Implementación y Resultados (C++)
 
-**Autor:** @procesos_fic
+**Autor:** Joshua Mendez
 **Curso:** Sistemas Operativos — **Fecha:** 2025-10-27
 
 ## Resumen
@@ -302,14 +302,6 @@ heapVar   (HEAP):  0x55ab...
   ```
 
   Si se quisieran filas no contiguas (cada fila con `new int[cols]`), entonces sí iría un bucle `delete[] A[i]` y luego `delete[] A`, o mejor, usar `std::vector`. 
-
-### Posibles mejoras
-
-* Sustituir `new`/`delete` en `memoria()` por `std::vector` o `std::unique_ptr` para coherencia.
-* Encapsular la matriz en una clase o usar `std::vector<int>` con indexado `i*cols + j`.
-* Manejar errores de E/S y formatos inválidos.
-
----
 
 ## Conclusiones
 
